@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelioWallet - Ethereum Wallet</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a192f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="py-4 px-6">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM2MERGRkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSI5Ii8+PHBhdGggZD0iTTEyIDN2MTgiLz48cGF0aCBkPSJNMyAxMmgxOCIvPjwvc3ZnPg==" alt="HelioWallet Logo" class="h-8">
+                <span class="ml-2 text-xl font-bold text-white">HelioWallet</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-white hover:text-blue-400">
+                    <i class="fas fa-home mr-1"></i> Home
+                </a>
+                <a href="#" class="text-white hover:text-blue-400">
+                    <i class="fas fa-exchange-alt mr-1"></i> Exchange
+                </a>
+                <a href="#" class="text-white hover:text-blue-400">
+                    <i class="fas fa-tools mr-1"></i> Tools
+                </a>
+                <a href="#" class="text-white hover:text-blue-400">
+                    <i class="fas fa-info-circle mr-1"></i> About
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Actions -->
+    <div class="container mx-auto text-center mt-8">
+        <div class="flex justify-center space-x-4">
+            <button class="px-6 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors" id="claimBtn">
+                <i class="fas fa-gift mr-1"></i> Claim
+            </button>
+            <button class="px-6 py-2 bg-teal-500 text-white rounded hover:bg-teal-600 transition-colors" id="newWalletBtn">
+                <i class="fas fa-wallet mr-1"></i> New Wallet
+            </button>
+            <button class="px-6 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition-colors" id="accessWalletBtn">
+                <i class="fas fa-sign-in-alt mr-1"></i> Access Wallet
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-16 px-4">
+        <h1 class="text-5xl font-bold text-center mb-8">Ethereum Wallet</h1>
+        <p class="text-center text-lg text-gray-300 max-w-3xl mx-auto">
+            Create wallet or access your wallet to send ether or tokens, you can also generate paper wallet, 
+            keystore file and download it. Automation is preferred, reduce manual operation, support the popular 
+            hardware wallets, easy to use. We are still here to make it better every day, we hope you enjoy it.
+        </p>
+
+        <!-- Features Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+            <!-- Create Wallet Card -->
+            <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div class="text-4xl text-blue-400 mb-4">
+                    <i class="fas fa-plus-circle"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Create A New Wallet</h3>
+                <p class="text-gray-400">Obtain an ETH address and generate your private key. Saving and safekeeping the key will be your responsibility.</p>
+            </div>
+
+            <!-- Access Wallet Card -->
+            <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div class="text-4xl text-green-400 mb-4">
+                    <i class="fas fa-unlock-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Access My Wallet</h3>
+                <p class="text-gray-400">Access your wallet with Hardware, Metamask or Software to send ether, tokens or backup your wallet.</p>
+            </div>
+
+            <!-- Exchange Card -->
+            <div class="bg-gray-800 rounded-lg p-6 hover:shadow-lg transition-shadow">
+                <div class="text-4xl text-purple-400 mb-4">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Cryptocurrency exchange</h3>
+                <p class="text-gray-400">Cryptocurrency exchange process easy, safe and comfortable for everyone, supports a limitless exchange of 300+ coins without sign-up.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Share Buttons -->
+    <div class="fixed right-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4">
+        <a href="#" class="bg-red-500 text-white p-3 rounded hover:bg-red-600 transition-colors">
+            <i class="fab fa-reddit-alien"></i>
+        </a>
+        <a href="#" class="bg-blue-400 text-white p-3 rounded hover:bg-blue-500 transition-colors">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+        <a href="#" class="bg-blue-500 text-white p-3 rounded hover:bg-blue-600 transition-colors">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="bg-blue-600 text-white p-3 rounded hover:bg-blue-700 transition-colors">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>

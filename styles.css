@@ -1,0 +1,77 @@
+/* Base styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0a192f;
+    color: #fff;
+}
+
+/* Button styles */
+.btn-claim {
+    background: linear-gradient(135deg, #ff4b4b 0%, #ff6b6b 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-new-wallet {
+    background: linear-gradient(135deg, #00b4d8 0%, #48cae4 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-access-wallet {
+    background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+    transition: all 0.3s ease;
+}
+
+/* Card styles */
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Modal styles */
+.modal-container {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Loading spinner */
+.loading-spinner {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-top: 3px solid #60dfff;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Form styles */
+.custom-input {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #60dfff;
+    outline: none;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+    .feature-card {
+        margin-bottom: 1rem;
+    }
+}
